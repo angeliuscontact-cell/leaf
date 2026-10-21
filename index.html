@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta
+      name="description"
+      content="LEAF is an AI-powered CV, cover letter and personal website builder. Write, design and share a professional story that gets you hired."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>LEAF — Build a career story that grows</title>
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('leaf-theme')
+          var mode = stored || 'system'
+          var dark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          if (dark) document.documentElement.classList.add('dark')
+          document.documentElement.dataset.themeMode = mode
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
