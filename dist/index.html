@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta
+      name="description"
+      content="LEAF is an AI-powered CV, cover letter and personal website builder. Write, design and share a professional story that gets you hired."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>LEAF — Build a career story that grows</title>
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('leaf-theme')
+          var mode = stored || 'system'
+          var dark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          if (dark) document.documentElement.classList.add('dark')
+          document.documentElement.dataset.themeMode = mode
+        } catch (e) {}
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-9Qt9HLi2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-CAz9_-H3.js">
+    <link rel="modulepreload" crossorigin href="/assets/motion-BSOt5rCy.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-O3hTsdP7.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BuT0cUAM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
